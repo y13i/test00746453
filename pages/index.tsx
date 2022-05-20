@@ -13,7 +13,7 @@ const Home: NextPage = () => {
           <p>loading</p>
         ) : isAuthenticated ? (
           <>
-            <pre>{JSON.stringify(user)}</pre>
+            <pre>{JSON.stringify(user, undefined, 2)}</pre>
             <button
               onClick={() => {
                 logout();
