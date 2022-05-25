@@ -25,8 +25,8 @@ const Home: NextPage = () => {
         ) : (
           <button
             onClick={() => {
-              const popup = window.open("", "auth0:authorize:popup");
-              loginWithPopup({}, { popup, timeoutInSeconds: 60 });
+//               const popup = window.open("", "auth0:authorize:popup");
+              loginWithPopup({}, { timeoutInSeconds: 60 });
             }}
           >
             loginWithPopup
